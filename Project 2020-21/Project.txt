@@ -1,0 +1,84 @@
+Dec 1
+* select command - what should i pass to get the record of the booked ticket? - k wont be defined out of the loop..
+
+
+
+
+
+
+
+
+* corresponding row to be booked - radiobutton for id then book button..
+then, row[idno.]
+* timings of dep and arri, bus no, etc - corresponds to the booked row - still couldnt figure using fetch?
+
+
+
+
+
+
+
+
+
+
+* pyimage2 doesn't exist - destroy previous window
+* radiobutton group - ?? - v.get() - https://subscription.packtpub.com/book/web_development/9781788622301/1/ch01lvl1sec17/creating-selections-with-radio-buttons
+
+* booked ticket display window - extraction of data from different tables - row[index]
+* Also file to save ticket (extraction of data from different tables) - row[index] and write and user id to be inserted
+
+
+
+
+
+
+doubts - 28/10
+* file to save ticket #6 - description in docstring and how to get data from radio buttons? - foreign key ALTER TABLE Orders
+ADD FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+
+* MAINLY - LINKING ALL THE FILES
+- https://stackoverflow.com/questions/2349991/how-to-import-other-python-files
+
+
+* help required in updating records through python
+
+* update data in sql (#5) - nonetype - no attribute execute
+
+'''
+# second algrithm
+def replace(n, str1,str2):
+    vowels = ['a','e','i','o','u']
+    if len(str1)>0:
+        for i in str1[::n]:#range(0,len(str1),n):#
+            #print(type(str1[i]))
+            for j in range(0,len(str1),n):
+                if i not in vowels:
+                    str2[j] += i
+                    
+                elif i == ' ':
+                    if i+1 in vowels:
+                        str2[j+1] += '@'
+                    elif i+1 not in vowels and i+2 in vowels:
+                        str2[j+2] += '$'
+                
+                elif i in vowels:
+                    str2[j] += '@'
+                                
+                elif i not in vowels and i+1 in vowels:
+                    str2[j+1] += '$'
+
+    else:
+        print('The string is empty')
+            
+    print(str2)
+'''
+
+''' For scroll bar - https://stackoverflow.com/questions/16188420/tkinter-scrollbar-for-frame/16198198#16198198
+    add canvas '''
+        
+
+1. home page image
+2. button to sign up and log in windows
+4. page 2 to database table
+5. Classes
+6. # use of file handling
